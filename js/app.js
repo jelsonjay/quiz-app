@@ -13,13 +13,13 @@ function submitAnswers() {
 	// show validations
 	for (let i = 1; i <= total; i++) {
 		if (eval('q' + i) === null || eval('q' + i) === '') {
-			alert('You missed question ' + i);
+			alert('Please answer all questions!');
 			return false;
 		}
 	}
 
 	//Set Correct Answers
-	let answers = ['a', 'a', 'd', 'b', 'd'];
+	let answers = ['a', 'a', 'd', 'b', 'd', 'c'];
 
 	//Check the answers
 	for (let i = 1; i <= total; i++) {
