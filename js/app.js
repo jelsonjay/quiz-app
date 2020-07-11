@@ -9,9 +9,9 @@ function submitAnswers() {
 	let q4 = document.forms['quizForm']['q4'].value;
 	let q5 = document.forms['quizForm']['q5'].value;
 
-	// Validations
+	// show validations
 	for (let i = 1; i <= total; i++) {
-		if (eval('q' + i) == null || eval('q' + i) == '') {
+		if (eval('q' + i) === null || eval('q' + i) === '') {
 			alert('You missed question ' + i);
 			return false;
 		}
@@ -22,7 +22,7 @@ function submitAnswers() {
 
 	//Check the answers
 	for (let i = 1; i <= total; i++) {
-		if (eval('q' + i) == answers[i - 1]) {
+		if (eval('q' + i) === answers[i - 1]) {
 			score++;
 		}
 	}
