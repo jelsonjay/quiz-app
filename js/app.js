@@ -2,7 +2,7 @@ function submitAnswers() {
 	let total = 6;
 	let score = 0;
 
-	// Get user input
+	// declare variable
 	let q1 = document.forms['quizForm']['q1'].value;
 	let q2 = document.forms['quizForm']['q2'].value;
 	let q3 = document.forms['quizForm']['q3'].value;
@@ -13,7 +13,7 @@ function submitAnswers() {
 	// show validations
 	for (let i = 1; i <= total; i++) {
 		if (eval('q' + i) === null || eval('q' + i) === '') {
-			alert('Please answer all questions!');
+			alert('You mised question!' + 1);
 			return false;
 		}
 	}
@@ -29,15 +29,15 @@ function submitAnswers() {
 	}
 
 	// show results
-	let results = document.getElementById('results');
+	let results = document.querySelector('#results');
 	results.style.color = 'green';
 	results.innerHTML =
-		'<h3> You scored <span>' +
+		'<h3>Result: you score: <span>' +
 		score +
 		'</span> out of <span>' +
 		total +
 		'</span></h3>';
-	alert('You scored ' + score + ' out of ' + total);
+	alert('Result you score: ' + score + ' out of ' + total);
 
 	return false;
 }

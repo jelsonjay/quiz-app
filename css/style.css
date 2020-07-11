@@ -4,7 +4,8 @@
 }
 body {
 	background: coral;
-	font-size: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1rem;
 }
 h1 {
 	text-align: center;
@@ -25,27 +26,12 @@ header {
 	border-bottom: white dashed 1px;
 }
 
-header h1 {
-	margin: 0;
-	padding: 0;
-}
-
-header p {
-	padding: 0;
-	margin-top: 10px;
-	color: #a05c7b;
-}
-
 section {
 	min-height: 400px;
 }
 
-footer {
-	text-align: center;
-}
-
 input[type='submit'] {
-	background: #a05c7b;
+	background: rgb(114, 223, 114);
 	border: 0;
 	color: #fff;
 	padding: 10px 15px;
@@ -64,4 +50,8 @@ input[type='submit'] {
 	color: green;
 	font-weight: bold;
 	font-size: 1rem;
+}
+
+footer {
+	text-align: center;
 }
