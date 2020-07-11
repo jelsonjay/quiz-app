@@ -1,4 +1,6 @@
-function submitAnswers() {
+function submitQuiz() {
+	'use strict';
+
 	let total = 6;
 	let score = 0;
 
