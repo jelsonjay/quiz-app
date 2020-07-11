@@ -1,5 +1,5 @@
 function submitAnswers() {
-	let total = 5;
+	let total = 6;
 	let score = 0;
 
 	// Get user input
@@ -8,6 +8,7 @@ function submitAnswers() {
 	let q3 = document.forms['quizForm']['q3'].value;
 	let q4 = document.forms['quizForm']['q4'].value;
 	let q5 = document.forms['quizForm']['q5'].value;
+	let q6 = document.forms['quizForm']['q6'].value;
 
 	// show validations
 	for (let i = 1; i <= total; i++) {
@@ -29,6 +30,7 @@ function submitAnswers() {
 
 	// show results
 	let results = document.getElementById('results');
+	results.style.color = 'green';
 	results.innerHTML =
 		'<h3> You scored <span>' +
 		score +
