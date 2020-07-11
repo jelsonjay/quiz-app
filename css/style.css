@@ -7,13 +7,14 @@ body {
 	font-size: 16px;
 }
 
-#container {
-	width: 60%;
+.container {
+	width: 50%;
 	background: #9ad1d4;
 	margin: 20px auto;
 	overflow: auto;
 	padding: 25px;
 	line-height: 25px;
+	border-radius: 10px;
 }
 
 header {
