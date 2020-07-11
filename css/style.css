@@ -6,7 +6,10 @@ body {
 	background: coral;
 	font-size: 16px;
 }
-
+h1 {
+	text-align: center;
+	color: #fff;
+}
 .container {
 	width: 50%;
 	background: #9ad1d4;
@@ -48,15 +51,16 @@ input[type='submit'] {
 	padding: 10px 15px;
 	font-size: 16px;
 	cursor: pointer;
+	border-radius: 5px;
 }
 
 #results h3 {
-	background: #20063b;
+	background: #444;
 	padding: 10px;
 	margin: 10px 0;
 }
 
 #results span {
-	color: #a05c7b;
+	color: #fff;
 	font-weight: bold;
 }
