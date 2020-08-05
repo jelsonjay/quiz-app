@@ -1,5 +1,5 @@
 # JavaScript Quiz-App
- This is a simple multiple choice quiz using html5, css & vanilla javascript
+ This is a simple multiple choice quiz using html5 css, vanilla javascript & es6
 
 
 [Access My Project](https://jelsonjay.github.io/quiz-app/)
